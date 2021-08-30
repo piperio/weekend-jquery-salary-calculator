@@ -2,19 +2,30 @@ h1 {
     background-color: grey;
     color: white;
     text-align: center;
-    height: 200px;
+    height: 100px;
     justify-content: center;
 
   }
   
-  .main {
-    background-color: lightgrey;
-    padding: 1em;
-    border-style:dotted solid double;
-    border-color: maroon;
-    border-width: 20px;
-  }
   
   body{
     
+  }
+
+  table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+
+  #submit-button {
+      text-align: right
   }
