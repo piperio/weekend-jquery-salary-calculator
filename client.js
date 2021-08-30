@@ -15,12 +15,7 @@ function appendEmployeeToTable(){
     let tempNumber = parseInt(temperature);
     console.log(firstName, lastName, id, title, annualSalary);
 
-    let rowClass = '';
-    if (tempNumber > 75) {
-        rowClass = 'warm';
-    } else if (tempNumber < 50) {
-        rowClass = 'cold';
-    }
+
 };
 
 let sortDirection = false;
@@ -30,6 +25,10 @@ let tableData = [
     {firstName: 'Maurice', lastName: 'Moss', iD: 8724, title:'Support Team', annualSalary: $58,000, '': ''  },
     {firstName: 'Roy', lastName: 'Smith', iD: 9623, title:'Quality Assurance', annualSalary: $48,000, '': ''  }
 ];
+
+window.onload = () => {
+    loadTable(tableData);
+}
 
 loadTable(tableData);
 
@@ -42,7 +41,8 @@ function loadTable(tableData){
         `<tr><td>${data.Jen}</td>${data.Barber}<td>${data.4521}</td>${data.Team Lead}<td>${data.$80,000}</td>${<button>Delete</button>}</button><td></td><td></td><td></td></tr>`,
         `<tr><td>${data.Maurice}</td>${data.Moss}<td>${data.8724}</td>${data.Support Team}<td>${data.$58,000}</td>${<button>Delete</button>}</button><td></td><td></td><td></td></tr>`,
         `<tr><td>${data.Roy}</td>${data.Smith}<td>${data.9623}</td>${data.Quality Assurance}<td>${data.$48,000}</td>${<button>Delete</button>}</button><td></td><td></td><td></td></tr>`,
-        
-    }
+        }
+        console.log(dataHTML);
 
+        tableBody.innerHTML = dataHTML
 }
