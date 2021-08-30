@@ -10,9 +10,9 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 ## Checklist
 
-- [ ] source in HTML, client.js, jquery.js, log "DOM ready"
-- [ ] Build a template in HTML (inputs / table)
-- [ ] Add some styling for the table
+- [x ] source in HTML, client.js, jquery.js, log "DOM ready"
+- [ x] Build a template in HTML (inputs / table)
+- [x ] Add some styling for the table
 - [ ] Button click that logs to the console
 - [ ] Assign input to variables
 - [ ] Append to the DOM using those variables
